@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>THRIFT IT EAZY - CLOTHING</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">THRIFT IT EAZY</h1>
+        <nav>
+            <hr>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1 class="welcome">Welcome Everyone</h1>
+        <p>This is a clothing store like no other. Meet the founders, Vince Russel Mandi and Angelica Millado, and explore our unique collection.</p>
+    </section>
+
+    <section id="shop">
+        <h2>Shop Our Products</h2>
+        <div class="slider-container">
+            <div class="slider">
+                <img src="LEGIT CHAMPION WINDBREAKER.png" alt="Product 1">
+                <img src="LEGIT NFL X REEBOK COLLABORATION WINDBREAKER.jpg" alt="Product 2">
+                <img src="LEGIT ANTA FASTBALL JERSEY JACKET.jpg" alt="Product 3">
+                <!-- Add more image slides as needed -->
+            </div>
+            <button class="prev-slide">Previous</button>
+            <button class="next-slide">Next</button>
+        </div>
+        <div class="image-overlay"></div>
+        <section class="shopping-cart">
+            <h3>Order Cart</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items">
+                    <!-- Cart items will be added here dynamically -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td><strong>Total:</strong></td>
+                        <td id="total-price">PHP 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <form id="order-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <p>Example: Vince Russel Mandi</p> <!-- Add example text below the name input -->
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <p>Example: exaur@example.com</p> <!-- Add example text below the email input -->
+            
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" required>
+                <p>Example: Purok 6, Alvindia Segundo Tarlac City</p> <!-- Add example text below the address input -->
+            
+                <button type="submit" class="place-order-button">Place Order</button>
+            </form>
+            
+        </section>
+    </section>
+
+    <section id="about">
+        <hr class="separator">
+        <h2>About Our Store</h2>
+        <h4>Located at Purok 6, Alvindia Segundo, Tarlac City</h4>
+        <p>"At Thrift it Eazy, our mission is to empower individuals to express their unique style and confidence through our high-quality and trendsetting clothing collections. We are dedicated to delivering fashion that not only looks good but also feels good, promoting self-expression, and fostering a sense of belonging within our community. With sustainability and inclusivity at the core of our practices, we strive to make a positive impact on both the fashion industry and the planet."</p>
+        <hr class="separator">
+    </section>
+
+    <section id="contact">
+        <p>Connect with us on social media:</p>
+        <ul class="social-links">
+            <li><a href="https://www.facebook.com/ThriftitEazy" target="_blank">Facebook</a></li>
+            <li><a href="https://www.tiktok.com/@x.exaur?_t=8gHGtp7LUxN&_r=1&fbclid=IwAR3hXh-Xej2_AnYBs9ypVUdF9T-EsRh-jNPn48CHCPyc2IyKaPdqniIIgPk" target="_blank">TikTok</a></li>
+            <li><a href="https://www.instagram.com/yourshop" target="_blank">Instagram</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="copyright">
+            <p>&copy; 2023 THRIFT IT EAZY</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

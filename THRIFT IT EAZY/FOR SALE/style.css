@@ -1,0 +1,252 @@
+
+header {
+    background: linear-gradient(to bottom, #000000, #00ff00); /* Linear gradient from black to green */
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 50px;
+}
+
+/* Logo styles (no change) */
+.logo {
+    font-size: 24px;
+    display: inline-block;
+    position: relative;
+}
+
+.logo::before {
+    content: "E";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 36px;
+    color: #21e021;
+}
+/* ABOUT HOME */
+.home h2{
+    font-family: Impact, Charcoal, sans-serif;
+    font-size: 100px;
+    letter-spacing: 6px;
+    word-spacing: 6px;
+    color: #000000;
+    font-weight: 400;
+    text-decoration: none solid rgb(68, 68, 68);
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: capitalize;
+    text-align: start;
+    text-shadow: white;
+}
+.home p{
+    font-size: 30px;
+    text-align: start;
+    color: #084200;
+    font: bolder;
+}
+/* Navigation links styles (no change) */
+.nav-links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-links li a:hover {
+    color: #00ff00; /* Change to the desired hover color */
+}
+
+/* ABOUT BODY */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #00ff00, #000000);
+    color: white;
+    display: flex;
+    flex-direction: column; /* Ensure body stretches to full height */
+    min-height: 100vh; /* Make the body at least the height of the viewport */
+    background-image: url('background.gif');
+    background-repeat: no-repeat;
+    background-position: right center; /* Adjust the position as needed */
+    background-size: cover; /* You can use 'cover' or 'contain' depending on your preference */
+    max-height: max-content;
+}
+.background-music-symbol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(BGIF.gif); /* Replace with your music symbol image */
+    background-repeat: no-repeat;
+    background-size: 100px;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: -1; /* Send it to the background */
+    animation: animateMusicSymbol 20s linear infinite;
+}
+/* Sections styles */
+section {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Background music symbol animation */
+.background-music-symbol {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('music-symbol.png'); /* Replace with your music symbol image */
+    background-repeat: no-repeat;
+    background-size: 100px;
+    opacity: 0.3;
+    pointer-events: none;
+    animation: animateMusicSymbol 20s linear infinite;
+}
+
+@keyframes animateMusicSymbol {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+/*ABOUT  ABOUT ME */
+
+
+
+/* ABOUT FOOTER */
+/* Footer styles */
+footer {
+    background-color: black; /* Set the background color to black */
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end; /* Align the footer to the bottom of its container */
+}
+
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    align-items: flex-end;
+}
+
+.footer-nav li {
+    margin-right: 20px;
+}
+
+.footer-nav li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav li a:hover {
+    color: #00ff00; /* Change to the desired hover color */
+}
+
+/*ABOUT LOG IN FORM*/
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    backdrop-filter: blur(8px);
+}
+.modal h2{
+    font-size: 30px;
+    color: greenyellow;
+    padding-bottom: 10px;
+}
+
+#login-form {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border-radius: 5px;
+    width: 320px;
+    padding: 30px; /* Increase padding for better spacing */
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 20px; /* Add some vertical spacing between input elements */
+    text-align: left; /* Left-align input labels */
+}
+
+.input-container label {
+    display: block; /* Place labels on a new line */
+    margin-bottom: 5px; /* Add space between labels and inputs */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="checkbox"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button.close-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px; /* Add spacing between "Close" button and other elements */
+}
+
+
+.close-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #555;
+}
